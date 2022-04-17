@@ -25,6 +25,7 @@ local options = {
   shiftwidth = 2,                          -- the number of spaces inserted for each indentation
   tabstop = 2,                             -- insert 2 spaces for a tab
   cursorline = true,                       -- highlight the current line
+  cursorcolumn = true,                     -- highlight the current column
   number = true,                           -- set numbered lines
   relativenumber = false,                  -- set relative numbered lines
   numberwidth = 4,                         -- set number column width to 2 {default 4}
@@ -33,6 +34,7 @@ local options = {
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  ve = {"block", "onemore"}                -- enable cursor move to the end of the line
 }
 
 vim.opt.shortmess:append "c"
