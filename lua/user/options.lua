@@ -33,6 +33,7 @@ local options = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
+  foldmethod = "indent",
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   ve = {"block", "onemore"}                -- enable cursor move to the end of the line
 }
