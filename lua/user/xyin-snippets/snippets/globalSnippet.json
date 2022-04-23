@@ -1,0 +1,26 @@
+{
+	"File information": {
+		"prefix": "file_info",
+		//"scope": "systemverilog, verilog c",
+		"body": [
+		  "/*=================================================================================================",
+		  "Project Name:    ${1}",
+		  "Author:          Xiaorui Yin <yinx@student.ethz.ch>",
+		  "Organization:    ETH Zürich",
+		  "File Name:       ${2}",
+		  "Created On:      ${CURRENT_YEAR}/${CURRENT_MONTH}/${CURRENT_DATE}",
+		  "",
+		  "Description:     ${3}",
+		  "",
+		  "CopyRight Notice",
+		  "All Rights Reserved",
+		  "===================================================================================================",
+		  "Modification    History:          ",
+		  "Date            By              Version         Change Description",
+		  "---------------------------------------------------------------------------------------------------",
+		  "",
+		  "=================================================================================================*/"
+		],
+		"description": "basic copyright file information"
+	}
+}

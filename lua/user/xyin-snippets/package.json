@@ -1,0 +1,20 @@
+{
+  "name": "xyin-snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "systemverilog"
+        ],
+        "path": "./snippets/globalSnippet.json"
+      },
+      {
+        "language": "systemverilog",
+        "path": "./snippets/systemverilog.json"
+      }
+    ]
+  }
+}

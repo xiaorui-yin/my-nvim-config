@@ -83,7 +83,10 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
-  use "nvim-telescope/telescope.nvim"
+  use {
+    "nvim-telescope/telescope.nvim",
+    requires = { {"nvim-lua/plenary.nvim"} }
+  }
   use "nvim-telescope/telescope-media-files.nvim"
 
   -- Treesitter
@@ -99,6 +102,12 @@ return packer.startup(function(use)
   -- Git
   use "lewis6991/gitsigns.nvim"
   
+  use "vim-test/vim-test"
+  use {
+    "rcarriga/vim-ultest",
+    run = ":UpdateRemotePlugins"
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
