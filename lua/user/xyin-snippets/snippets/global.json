@@ -1,7 +1,6 @@
 {
 	"File information": {
 		"prefix": "file_info",
-		//"scope": "systemverilog, verilog c",
 		"body": [
 		  "/*=================================================================================================",
 		  "Project Name:    ${1}",

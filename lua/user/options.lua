@@ -34,6 +34,7 @@ local options = {
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   foldmethod = "indent",
+  foldlevel=20,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   ve = {"block", "onemore"}                -- enable cursor move to the end of the line
 }
