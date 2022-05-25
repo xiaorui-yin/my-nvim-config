@@ -19,4 +19,6 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
+require "user.scroll"
 vim.cmd("source ~/.config/nvim/plugin/systemverilog_emacsauto.vim")
+require "user.auto-session"

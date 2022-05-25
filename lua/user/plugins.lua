@@ -107,6 +107,21 @@ return packer.startup(function(use)
     "rcarriga/vim-ultest",
     run = ":UpdateRemotePlugins"
   }
+  
+  -- Smooth scrolling
+  use "karb94/neoscroll.nvim"
+
+  -- Session manager
+  use "Shatur/neovim-session-manager"
+
+  -- Code outline
+  use {
+    "stevearc/aerial.nvim",
+    config = function() require("aerial").setup() end
+  }
+
+  -- Latex
+  use "lervag/vimtex"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

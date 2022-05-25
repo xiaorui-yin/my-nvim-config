@@ -9,7 +9,7 @@ if not snip_status_ok then
 end
 
 --require("luasnip/loaders/from_vscode").lazy_load()
-vim.opt.runtimepath = vim.opt.runtimepath + '/home/xyin/.config/nvim/lua/user/xyin-snippets'
+vim.opt.runtimepath = vim.opt.runtimepath + '/home/xyin/.config/nvim/xyin-snippets'
 require("luasnip/loaders/from_vscode").lazy_load()
 --require("luasnip.loaders.from_vscode").load({ paths = {"~/.config/nvim/lua/user/friendly-snippets/"} })
 

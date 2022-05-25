@@ -1,0 +1,19 @@
+总用量 72K
+-rw-r--r-- 1 xyin xyin 1.7K Apr 23 16:29 alpha.lua
+-rw-r--r-- 1 xyin xyin  967 Apr 23 16:29 autocommands.lua
+-rw-r--r-- 1 xyin xyin  906 Apr 23 16:29 autopairs.lua
+-rw-r--r-- 1 xyin xyin 6.4K Apr 23 16:29 bufferline.lua
+-rw-r--r-- 1 xyin xyin  681 Apr 23 16:29 comment.lua
+-rw-r--r-- 1 xyin xyin 1.7K Apr 23 16:29 gitsigns.lua
+-rw-r--r-- 1 xyin xyin  120 Apr 23 16:29 impatient.lua
+-rw-r--r-- 1 xyin xyin 2.0K Apr 23 16:29 indentline.lua
+-rw-r--r-- 1 xyin xyin    0 May  2 19:52 init.lua
+-rw-r--r-- 1 xyin xyin 2.0K Apr 23 16:29 lualine.lua
+-rw-r--r-- 1 xyin xyin 2.2K Apr 24 12:43 nvim-tree.lua
+-rw-r--r-- 1 xyin xyin 1.8K Apr 23 16:29 project.lua
+-rw-r--r-- 1 xyin xyin 1.6K Apr 25 09:39 scroll.lua
+-rw-r--r-- 1 xyin xyin 3.2K Apr 23 16:29 telescope.lua
+-rw-r--r-- 1 xyin xyin 1.7K Apr 23 16:29 toggleterm.lua
+-rw-r--r-- 1 xyin xyin 1.2K Apr 23 16:29 treesitter.lua
+-rw-r--r-- 1 xyin xyin    0 Apr 23 16:29 vim-ultest.lua
+-rw-r--r-- 1 xyin xyin 7.4K Apr 23 16:29 whichkey.lua

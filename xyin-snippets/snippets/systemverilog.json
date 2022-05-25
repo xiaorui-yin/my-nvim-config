@@ -13,7 +13,7 @@
   	"body": [                                                      
   		"always_ff @(posedge clk_i or negedge rst_ni) begin",        
   		"\tif (!rst_ni) begin",                                      
-  		"\t\t$1",                                                    
+  		"\t\t/*AUTORESET*/",                                                    
   		"\tend else begin",                                          
   		"\t\t$2",                                                    
   		"\tend",                                                     
@@ -175,11 +175,20 @@
   "module": {                                                      
   	"prefix": "module",                                            
   	"body": [                                                      
-  		"module ${1:name}(",                                         
+  		"module ${1:name} (/*AUTOARG*/);",
+      "\tinput clk_i;",
+      "\tinput rst_ni;",
   		"\t${2:port_list}",                                          
-  		");",                                                        
   		"\t$0",                                                      
-  		"endmodule"                                                  
+  		"endmodule",
+      "// Local Variables:",
+      "// verilog-library-directories:(\".\" \"subdir\" \"subdir2\")",
+      "// verilog-library-files(\"\"/some/path/technology.v\" \"/some/path/tech2.v\")",
+      "// verilog-library-extensions:(\".v\" \".h\")",
+      "// eval:(verilog-read-defines)",
+      "// eval:(verilog-read-defines \"group_standard_includes.v\")",
+      "// eval:(verilog-read-includes)",
+      "// End:"
   	],                                                             
   	"description": "Snippet for a module definition"               
   },                                                               
@@ -188,11 +197,20 @@
   	"body": [                                                      
   		"module ${1:name} #(",                                       
   		"\t${2:parameters}",                                         
-  		") (",                                                       
-  		"\t${3:port_list}",                                          
-  		");",                                                        
+  		") (/*AUTOARG*/);",                                                       
+  		"\tinput clk_i;", 
+      "\tinput rst_ni;",
+      "\t${3:port_list}",                                          
   		"\t$0",                                                      
-  		"endmodule"                                                  
+  		"endmodule",
+      "// Local Variables:",
+      "// verilog-library-directories:(\".\" \"subdir\" \"subdir2\")",
+      "// verilog-library-files(\"\"/some/path/technology.v\" \"/some/path/tech2.v\")",
+      "// verilog-library-extensions:(\".v\" \".h\")",
+      "// eval:(verilog-read-defines)",
+      "// eval:(verilog-read-defines \"group_standard_includes.v\")",
+      "// eval:(verilog-read-includes)",
+      "// End:"
   	],                                                             
   	"description": "Snippet for a parameterized module definition" 
   },
@@ -306,6 +324,15 @@
 		],
 		"description": "Snippet for a separator"
 	},
+  "instantiation": {
+    "prefix": "instantiate",
+    "body": [
+      "${1:module_name} #(/*AUTOINSTPARAM*/)",
+      "${2:inst_name}",
+      "\t(/*AUTOINST*/);"
+    ],
+    "description": "Snippet for auto instantiation"
+  },
 	"beginend": {
 		"prefix": "begin",
 		"body": [

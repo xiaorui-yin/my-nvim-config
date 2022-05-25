@@ -6,8 +6,8 @@
 
 " comment out these two lines
 " if you don't want folding or if you prefer other folding methods
-setlocal foldmethod=expr
-setlocal foldexpr=VerilogEmacsAutoFoldLevel(v:lnum)
+" setlocal foldmethod=expr
+" setlocal foldexpr=VerilogEmacsAutoFoldLevel(v:lnum)
 
 if exists("loaded_verilog_emacsauto")
    finish

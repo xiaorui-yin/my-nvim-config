@@ -79,6 +79,12 @@ _G.packer_plugins = {
     path = "/home/xyin/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["aerial.nvim"] = {
+    config = { "\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vaerial\frequire\0" },
+    loaded = true,
+    path = "/home/xyin/.local/share/nvim/site/pack/packer/start/aerial.nvim",
+    url = "https://github.com/stevearc/aerial.nvim"
+  },
   ["alpha-nvim"] = {
     loaded = true,
     path = "/home/xyin/.local/share/nvim/site/pack/packer/start/alpha-nvim",
@@ -143,6 +149,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/xyin/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/home/xyin/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
+  },
+  ["neovim-session-manager"] = {
+    loaded = true,
+    path = "/home/xyin/.local/share/nvim/site/pack/packer/start/neovim-session-manager",
+    url = "https://github.com/Shatur/neovim-session-manager"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
@@ -254,6 +270,11 @@ _G.packer_plugins = {
     path = "/home/xyin/.local/share/nvim/site/pack/packer/start/vim-ultest",
     url = "https://github.com/rcarriga/vim-ultest"
   },
+  vimtex = {
+    loaded = true,
+    path = "/home/xyin/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
+  },
   ["which-key.nvim"] = {
     loaded = true,
     path = "/home/xyin/.local/share/nvim/site/pack/packer/start/which-key.nvim",
@@ -262,6 +283,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: aerial.nvim
+time([[Config for aerial.nvim]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vaerial\frequire\0", "config", "aerial.nvim")
+time([[Config for aerial.nvim]], false)
 if should_profile then save_profiles() end
 
 end)
