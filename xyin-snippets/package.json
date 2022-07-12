@@ -7,6 +7,23 @@
     "snippets": [
       {
         "language": [
+          "plaintext",
+          "markdown",
+          "tex",
+          "html",
+          "global",
+          "all",
+          "cpp",
+          "systemverilog",
+          "verilog",
+          "python",
+          "lua",
+          "scala"
+        ],
+        "path": "./snippets/global.json"
+      },
+      {
+        "language": [
           "cpp"
         ],
         "path": "./snippets/cpp.json"
@@ -14,16 +31,6 @@
       {
         "language": "systemverilog",
         "path": "./snippets/systemverilog.json"
-      },
-      {
-        "language": [
-          "cpp",
-          "verilgo",
-          "c",
-          "python",
-          "systemverilog"
-        ],
-        "path": "./snippets/global.json"
       },
       {                                                
         "language": "python",                          
